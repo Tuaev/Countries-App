@@ -1,0 +1,83 @@
+.card {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0.8rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.31), 0 8px 18px -8px rgba(0, 0, 0, 0.25);
+}
+.card__img {
+  min-width: 12rem;
+  max-width: 12rem;
+  height: 8rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 3px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--textPrimary);
+}
+
+.card__text {
+  font-size: 1.2rem;
+  color: var(--textSubtitle);
+}
+
+@media screen and (max-width: 960px) {
+  .card {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    padding-right: 10px;
+
+    max-width: 50rem;
+  }
+  .card__img {
+    min-width: 6rem;
+    max-width: 6rem;
+    max-height: 4rem;
+  }
+
+  .card__title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .card__text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

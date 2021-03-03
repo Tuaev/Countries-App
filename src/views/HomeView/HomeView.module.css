@@ -1,0 +1,29 @@
+.input {
+  border: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-size: 14px;
+  width: 50%;
+  height: 100%;
+  outline: none;
+  background-color: lightgrey;
+  border-radius: 8px;
+  color: var(--textSubtitle);
+}
+
+.input::placeholder {
+  color: var(--text-color-secondary);
+}
+
+.input__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root {
+  --textPrimary: #000000;
+  --textSubtitle: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  background-color: #ededed;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  margin-bottom: 5px;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 45rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 50rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.col-xs-12 {
+  grid-column: span 12;
+}
