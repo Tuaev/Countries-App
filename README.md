@@ -1,6 +1,6 @@
 # Distilled SCH Tech Test - Soslan Tuaev
 
-CodeSandbox Link:
+CodeSandbox Link: [Countries App](https://codesandbox.io/s/objective-hugle-9f4z2)
 
 ## The Test
 
@@ -34,4 +34,4 @@ npm install
 npm start
 ```
 
-Or simply visit the running app on CodeSandbox - [Countries App]()
+Or simply visit the running app on CodeSandbox - [Countries App](https://codesandbox.io/s/objective-hugle-9f4z2)
