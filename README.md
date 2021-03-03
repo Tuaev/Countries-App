@@ -14,6 +14,7 @@ Built with React and as little npm packages as possible.
 - [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js
 - [React Helmet](https://www.npmjs.com/package/react-helmet) - to set dynamic page titles
 - [Prop-types](https://www.npmjs.com/package/prop-types) - Runtime type checking for React props and similar objects.
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework with a focus on simplicity
 
 ## Features
 
