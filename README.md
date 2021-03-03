@@ -1,6 +1,6 @@
 # Distilled SCH Tech Test - Soslan Tuaev
 
-CodeSandbox Link: [Countries App](https://codesandbox.io/s/objective-hugle-9f4z2)
+CodeSandbox Link: [Countries App](https://codesandbox.io/s/cool-wave-fyzif)
 
 ## The Test
 
@@ -35,4 +35,4 @@ npm install
 npm start
 ```
 
-Or simply visit the running app on CodeSandbox - [Countries App](https://codesandbox.io/s/objective-hugle-9f4z2)
+Or simply visit the running app on CodeSandbox - [Countries App](https://codesandbox.io/s/cool-wave-fyzif)
