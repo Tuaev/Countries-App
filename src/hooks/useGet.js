@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from 'react';
-import axios from '../utils/axiosConfig';
+import axios from 'src/utils/axiosConfig';
 
 const initialState = {
   data: null,

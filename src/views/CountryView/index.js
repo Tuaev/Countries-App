@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './CountryView.module.css';
-import BorderCountry from '../../components/BorderCountry';
-import FeatureCard from '../../components/FeatureCard';
-import Page from '../../components/Page';
-import useGet from '../../hooks/useGet';
-import Loader from '../../components/Loader';
-import Error from '../../components/Error';
+import BorderCountry from 'src/components/BorderCountry';
+import FeatureCard from 'src/components/FeatureCard';
+import Page from 'src/components/Page';
+import useGet from 'src/hooks/useGet';
+import Loader from 'src/components/Loader';
+import Error from 'src/components/Error';
 
 function CountryView() {
   const { countryAlpha } = useParams();

@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import Card from '../../components/Card/';
-import Error from '../../components/Error';
-import Loader from '../../components/Loader';
-import Page from '../../components/Page';
-import useGet from '../../hooks/useGet';
+import Card from 'src/components/Card/';
+import Error from 'src/components/Error';
+import Loader from 'src/components/Loader';
+import Page from 'src/components/Page';
+import useGet from 'src/hooks/useGet';
 import styles from './HomeView.module.css';
+
 function HomeView() {
   const [searchInput, setSearchInput] = useState('');
   const { data: countries, loading, error } = useGet(`/all`);

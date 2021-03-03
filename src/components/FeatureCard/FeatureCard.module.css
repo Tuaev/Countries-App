@@ -4,6 +4,7 @@
   flex-basis: 0%;
   align-items: center;
 }
+
 .detailsColumn {
   display: flex;
   flex-direction: column;

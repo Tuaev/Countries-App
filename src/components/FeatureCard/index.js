@@ -1,5 +1,5 @@
 import React from 'react';
-import { numberComma } from '../../utils/formatters';
+import { numberComma } from 'src/utils/formatters';
 import PropTypes from 'prop-types';
 import styles from './FeatureCard.module.css';
 
@@ -8,11 +8,11 @@ function FeatureCard({ country }) {
     <div className={styles.card}>
       <div className={styles.flagColumn}>
         <div className={styles.card__img}>
-          <img src={country.flag} alt="flag" />
+          <img src={country?.flag} alt="flag" />
         </div>
         <div className={styles.flag__info}>
-          <h1>{country.name}</h1>
-          <h3>{country.subregion}</h3>
+          <h1>{country?.name}</h1>
+          <h3>{country?.subregion}</h3>
         </div>
       </div>
 
@@ -20,18 +20,18 @@ function FeatureCard({ country }) {
         <h1 className={styles.card__title}>Country Info</h1>
         <hr />
         <p className={styles.card__text}>
-          <b>Capital:</b> {country.capital}
+          <b>Capital:</b> {country?.capital}
         </p>
         <p className={styles.card__text}>
-          <b>Population:</b> {numberComma(country.population)}
+          <b>Population:</b> {numberComma(country?.population)}
         </p>
         <p className={styles.card__text}>
           <b>Currency:</b>{' '}
-          {country.currencies.map((currency) => currency.code).join(', ')}
+          {country?.currencies.map((currency) => currency.code).join(', ')}
         </p>
         <p className={styles.card__text}>
           <b>Languages:</b>{' '}
-          {country.languages.map((language) => language.name).join(', ')}
+          {country?.languages.map((language) => language.name).join(', ')}
         </p>
       </div>
     </div>
@@ -39,7 +39,16 @@ function FeatureCard({ country }) {
 }
 
 FeatureCard.propTypes = {
-  country: PropTypes.object,
+  country: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    capital: PropTypes.string.isRequired,
+    subregion: PropTypes.string.isRequired,
+    flag: PropTypes.string.isRequired,
+    alpha3Code: PropTypes.string.isRequired,
+    population: PropTypes.number.isRequired,
+    languages: PropTypes.array.isRequired,
+    currencies: PropTypes.array.isRequired,
+  }),
 };
 
 export default FeatureCard;
